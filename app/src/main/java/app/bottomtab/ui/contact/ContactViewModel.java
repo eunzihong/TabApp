@@ -6,14 +6,16 @@ import androidx.lifecycle.ViewModel;
 
 public class ContactViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
+    private MutableLiveData<String> Contacts;
 
     public ContactViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is contact fragment");
+        Contacts = new MutableLiveData<>();
+        Contacts.setValue("hello");
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public LiveData<String> getContact() {
+        return Contacts;
     }
+
+
 }
