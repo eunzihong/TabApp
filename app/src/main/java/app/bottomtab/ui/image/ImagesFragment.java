@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,11 +24,13 @@ public class ImagesFragment extends Fragment {
         ImagesViewModel =
                 ViewModelProviders.of(this).get(ImagesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_image, container, false);
-        final TextView textView = root.findViewById(R.id.text_image);
+
+        GridView gv = (GridView) root.findViewById(R.id.gridview);
+        gv.setAdapter(new ImageAdapter(getActivity()));
+
         ImagesViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
             }
         });
         return root;
