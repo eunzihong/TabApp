@@ -4,12 +4,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import app.bottomtab.R;
@@ -17,19 +16,34 @@ import app.bottomtab.R;
 public class NotificationsFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
+    private Button btn_previous, btn_next;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         notificationsViewModel =
                 ViewModelProviders.of(this).get(NotificationsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+
+        btn_previous = root.findViewById(R.id.btn_previous);
+        btn_next = root.findViewById(R.id.btn_next);
+
+        View.OnClickListener pagebtn_listener = new View.OnClickListener() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.btn_previous:
+                        Toast.makeText(getActivity(), "Back to the previous page", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.btn_next:
+                        Toast.makeText(getActivity(), "Go to the next page", Toast.LENGTH_SHORT).show();
+                        break;
+                }
             }
-        });
+        };
+
+        btn_previous.setOnClickListener(pagebtn_listener);
+        btn_next.setOnClickListener(pagebtn_listener);
+
         return root;
     }
 }
