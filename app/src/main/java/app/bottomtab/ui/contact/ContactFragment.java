@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -31,7 +32,8 @@ public class ContactFragment extends Fragment {
                 ViewModelProviders.of(this).get(ContactViewModel.class);
         View root = inflater.inflate(R.layout.fragment_contact, container, false);
 
-        final androidx.recyclerview.widget.RecyclerView ContactView = root.findViewById(R.id.recyclerview_contacts);
+        final androidx.recyclerview.widget.RecyclerView ContactView =
+                root.findViewById(R.id.recyclerview_contacts);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         ContactView.setLayoutManager(linearLayoutManager);
@@ -69,13 +71,15 @@ public class ContactFragment extends Fragment {
 
                 contact.setName(contactObject.getString("NAME"));
                 contact.setPhoneNumber(contactObject.getString("PHONE"));
+                contact.setProfile(getResources().getIdentifier(
+                        contactObject.getString("PROFILE"),"drawable",
+                        getActivity().getPackageName()));
 
                 adapter.addItem(contact);
             }
         }catch (JSONException e) {
             e.printStackTrace();
         }
-
 
         adapter.notifyDataSetChanged();
 

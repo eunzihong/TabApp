@@ -1,8 +1,11 @@
 package app.bottomtab.ui.contact;
 
+import android.graphics.drawable.Drawable;
+
 public class Contact {
-    String phoneNumber;
-    String name;
+    private String phoneNumber;
+    private String name;
+    private int profile;
 
     public String getPhoneNumber() {
         return phoneNumber;
@@ -19,4 +22,8 @@ public class Contact {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getProfile()  { return profile; }
+
+    public void setProfile(int profile)  { this.profile = profile; }
 }
