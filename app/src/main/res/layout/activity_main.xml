@@ -3,11 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
-<<<<<<< HEAD
     android:layout_height="match_parent">
-=======
-    android:layout_height="match_parent" >
->>>>>>> 28c3405e7f3fc8e00f9de577037048d0b64b2f81
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
@@ -28,14 +24,8 @@
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
         app:layout_constraintTop_toTopOf="parent">
 
-=======
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
->>>>>>> 28c3405e7f3fc8e00f9de577037048d0b64b2f81
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

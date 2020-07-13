@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD:app/src/main/res/layout/fragment_notifications.xml
     tools:context=".ui.notifications.FunMbtiFragment1">
-=======
-    tools:context=".ui.mbti.MBTIFragment">
->>>>>>> 28c3405e7f3fc8e00f9de577037048d0b64b2f81:app/src/main/res/layout/fragment_mbti.xml
 
     <LinearLayout
         android:layout_width="match_parent"

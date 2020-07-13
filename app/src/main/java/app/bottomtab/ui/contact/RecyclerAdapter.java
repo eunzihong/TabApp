@@ -1,5 +1,6 @@
 package app.bottomtab.ui.contact;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

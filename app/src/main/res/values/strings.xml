@@ -2,5 +2,5 @@
     <string name="app_name">BottomTab</string>
     <string name="title_contact">Contacts</string>
     <string name="title_image">Images</string>
-    <string name="title_MBTI">fun MBTI</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
