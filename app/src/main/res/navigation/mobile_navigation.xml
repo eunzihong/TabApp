@@ -18,8 +18,15 @@
         tools:layout="@layout/fragment_image" />
 
     <fragment
+<<<<<<< HEAD
         android:id="@+id/navigation_notifications"
         android:name="app.bottomtab.ui.notifications.FunMbtiFragment1"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+=======
+        android:id="@+id/navigation_MBTI"
+        android:name="app.bottomtab.ui.mbti.MBTIFragment"
+        android:label="@string/title_MBTI"
+        tools:layout="@layout/fragment_mbti" />
+>>>>>>> 28c3405e7f3fc8e00f9de577037048d0b64b2f81
 </navigation>

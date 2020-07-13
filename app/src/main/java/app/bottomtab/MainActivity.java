@@ -3,16 +3,23 @@ package app.bottomtab;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+<<<<<<< HEAD
 
 import app.bottomtab.ui.contact.ContactFragment;
 import app.bottomtab.ui.image.ImagesFragment;
 import app.bottomtab.ui.notifications.FunMbtiFragment1;
+=======
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import app.bottomtab.ui.contact.ContactFragment;
+import app.bottomtab.ui.image.ImagesFragment;
+import app.bottomtab.ui.mbti.MBTIFragment;
+>>>>>>> 28c3405e7f3fc8e00f9de577037048d0b64b2f81
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +28,11 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTransaction ft;
     private ContactFragment frag1;
     private ImagesFragment frag2;
+<<<<<<< HEAD
     private FunMbtiFragment1 frag3;
+=======
+    private MBTIFragment frag3;
+>>>>>>> 28c3405e7f3fc8e00f9de577037048d0b64b2f81
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navigation_images:
                         setFrag(1);
                         break;
-                    case R.id.navigation_notifications:
+                    case R.id.navigation_MBTI:
                         setFrag(2);
                         break;
                 }
@@ -47,7 +58,11 @@ public class MainActivity extends AppCompatActivity {
         });
         frag1 = new ContactFragment();
         frag2 = new ImagesFragment();
+<<<<<<< HEAD
         frag3 = new FunMbtiFragment1();
+=======
+        frag3 = new MBTIFragment();
+>>>>>>> 28c3405e7f3fc8e00f9de577037048d0b64b2f81
         setFrag(0);
 
         // Passing each menu ID as a set of Ids because each
