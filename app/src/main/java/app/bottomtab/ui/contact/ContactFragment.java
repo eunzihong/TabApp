@@ -22,14 +22,11 @@ import app.bottomtab.R;
 
 public class ContactFragment extends Fragment {
 
-    private ContactViewModel ContactViewModel;
     private RecyclerAdapter adapter;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ContactViewModel =
-                ViewModelProviders.of(this).get(ContactViewModel.class);
         View root = inflater.inflate(R.layout.fragment_contact, container, false);
 
         final androidx.recyclerview.widget.RecyclerView ContactView =

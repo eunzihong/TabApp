@@ -17,22 +17,14 @@ import app.bottomtab.R;
 
 public class ImagesFragment extends Fragment {
 
-    private ImagesViewModel ImagesViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ImagesViewModel =
-                ViewModelProviders.of(this).get(ImagesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_image, container, false);
 
         GridView gv = (GridView) root.findViewById(R.id.gridview);
         gv.setAdapter(new ImageAdapter(getActivity()));
 
-        ImagesViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-            }
-        });
         return root;
     }
 }
