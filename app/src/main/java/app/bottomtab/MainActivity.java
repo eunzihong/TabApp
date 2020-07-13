@@ -9,14 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import app.bottomtab.ui.contact.ContactFragment;
 import app.bottomtab.ui.image.ImagesFragment;
-import app.bottomtab.ui.notifications.NotificationsFragment;
+import app.bottomtab.ui.notifications.FunMbtiFragment1;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTransaction ft;
     private ContactFragment frag1;
     private ImagesFragment frag2;
-    private NotificationsFragment frag3;
+    private FunMbtiFragment1 frag3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });
         frag1 = new ContactFragment();
         frag2 = new ImagesFragment();
-        frag3 = new NotificationsFragment();
+        frag3 = new FunMbtiFragment1();
         setFrag(0);
 
         // Passing each menu ID as a set of Ids because each

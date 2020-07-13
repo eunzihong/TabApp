@@ -36,8 +36,8 @@ public class FunMbtiFragment2 extends Fragment {
                 // setArguments : fragment안에 bundle을 넣어줌
 
                 transaction.replace(R.id.main_frame, funMbtiFragment3);
-                // click하면 fragment 생성부터 교체까지 다 함
-                transaction.commit(); // 저장!
+                transaction.commit();
+                // 저장!
             }
         });
 
@@ -47,12 +47,12 @@ public class FunMbtiFragment2 extends Fragment {
         btn_back2.setOnClickListener(new View.OnClickListener() { // fragment 2로 이동한다.
             @Override
             public void onClick(View view) {
-                Bundle bundle = new Bundle(); // 무언가를 담을 수 있는 것 : bundle
-                bundle.putString("fromFrag1", "홍드로이드 프래그먼트 2"); // 넘겨줄 값
+//                Bundle bundle = new Bundle(); // 무언가를 담을 수 있는 것 : bundle
+//                bundle.putString("fromFrag1", "홍드로이드 프래그먼트 2"); // 넘겨줄 값
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 // transaction : fragment를 관리함
 
-                NotificationsFragment funMbtiFragment1 = new NotificationsFragment();
+                FunMbtiFragment1 funMbtiFragment1 = new FunMbtiFragment1();
 //                NotificationsFragment.setArguments(bundle);
                 // setArguments : fragment안에 bundle을 넣어줌
 

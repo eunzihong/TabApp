@@ -15,7 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import app.bottomtab.R;
 
-public class NotificationsFragment extends Fragment {
+public class FunMbtiFragment1 extends Fragment {
 
     private Button btn_prev1;
     private View view;
