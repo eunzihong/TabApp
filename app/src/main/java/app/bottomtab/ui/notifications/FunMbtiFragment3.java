@@ -1,10 +1,13 @@
 package app.bottomtab.ui.notifications;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -15,41 +18,81 @@ import app.bottomtab.R;
 public class FunMbtiFragment3 extends Fragment {
 
     private Button btn_prev3;
-    private Button btn_back3;
     private View view;
+
+    private RadioGroup TF1, TF2, TF3;
+    private int E_count, I_count;
+    int check1, check2, check3, sum;
+
+    private Context context;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_mbti3, container, false);
         btn_prev3 = view.findViewById(R.id.btn_prev3);
 
+        TF1 = view.findViewById(R.id.TF1);
+        TF2 = view.findViewById(R.id.TF2);
+        TF3 = view.findViewById(R.id.TF3);
+        context = container.getContext();
+
+
         btn_prev3.setOnClickListener(new View.OnClickListener() { // fragment 2로 이동한다.
             @Override
             public void onClick(View view) {
-                //비워 둠
-            }
-        });
-
-
-        btn_back3 = view.findViewById(R.id.btn_back3);
-
-        btn_back3.setOnClickListener(new View.OnClickListener() { // fragment 2로 이동한다.
-            @Override
-            public void onClick(View view) {
-//                Bundle bundle = new Bundle(); // 무언가를 담을 수 있는 것 : bundle
-//                bundle.putString("fromFrag1", "홍드로이드 프래그먼트 2"); // 넘겨줄 값
+                Bundle bundle = new Bundle(); // 무언가를 담을 수 있는 것 : bundle
+                bundle.putString("fromFrag1", "홍드로이드 프래그먼트 2"); // 넘겨줄 값
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 // transaction : fragment를 관리함
 
-                FunMbtiFragment2 funMbtiFragment2 = new FunMbtiFragment2();
-//                NotificationsFragment.setArguments(bundle);
+                FunMbtiFragment4 funMbtiFragment4 = new FunMbtiFragment4();
+                funMbtiFragment4.setArguments(bundle);
                 // setArguments : fragment안에 bundle을 넣어줌
 
-                transaction.replace(R.id.main_frame, funMbtiFragment2);
-                // click하면 fragment 생성부터 교체까지 다 함
-                transaction.commit(); // 저장!
+                sum = check1 + check2 + check3;
+                String[] tmp = {"000", "111", "222", "333"};
+                Toast.makeText(context, tmp[sum], Toast.LENGTH_SHORT).show();
+
+                transaction.replace(R.id.main_frame, funMbtiFragment4);
+                transaction.commit();
+                // 저장!
             }
         });
+
+        TF1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == R.id.T1) {
+                    check1 = 0;
+                }
+                else {
+                    check1 = 1;
+                }
+            }
+        });
+        TF2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == R.id.T2) {
+                    check2 = 0;
+                }
+                else {
+                    check2 = 1;
+                }
+            }
+        });
+        TF3.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == R.id.T3) {
+                    check3 = 0;
+                }
+                else {
+                    check3 = 1;
+                }
+            }
+        });
+
         return view;
     }
 }

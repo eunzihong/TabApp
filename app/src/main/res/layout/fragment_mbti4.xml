@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
 <!--    <Button-->
-<!--        android:id="@+id/btn_back3"-->
+<!--        android:id="@+id/btn_back4"-->
 <!--        android:layout_width="0dp"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:layout_marginStart="16dp"-->
@@ -18,20 +18,20 @@
 <!--        app:layout_constraintStart_toStartOf="parent" />-->
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:text="4"
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
-        android:id="@+id/btn_prev3"
+        android:id="@+id/btn_prev4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="65dp"
-        android:text="다음으로"
+        android:text="결과보기!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -48,10 +48,11 @@
     <!--    -->
     <!--    -->
 
-<!--Thinking Feeling--><!--Extroversion, Introversion -->
+    <!--Juding Perceiving-->
+    <!--Extroversion, Introversion -->
 
     <RadioGroup
-        android:id="@+id/TF1"
+        android:id="@+id/JP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,20 +61,20 @@
         tools:layout_editor_absoluteY="129dp">
 
         <RadioButton
-            android:id="@+id/T1"
+            android:id="@+id/J1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="“비행기랑 숙소 예약! 준비 끝!”" />
 
         <RadioButton
-            android:id="@+id/F1"
+            android:id="@+id/P1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="“첫째 날엔 이거 하고, 둘째 날에 그거 하고, \n 셋째 날엔 저거 하자. 어때?”" />
     </RadioGroup>
 
     <RadioGroup
-        android:id="@+id/TF2"
+        android:id="@+id/JP2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,20 +82,20 @@
         tools:layout_editor_absoluteY="333dp">
 
         <RadioButton
-            android:id="@+id/T2"
+            android:id="@+id/J2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RadioButton" />
 
         <RadioButton
-            android:id="@+id/F2"
+            android:id="@+id/P2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RadioButton" />
     </RadioGroup>
 
     <RadioGroup
-        android:id="@+id/TF3"
+        android:id="@+id/JP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,13 +104,13 @@
         tools:layout_editor_absoluteY="509dp">
 
         <RadioButton
-            android:id="@+id/T3"
+            android:id="@+id/J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="“스트레스 받음. 어떻게든 오늘 끝내야 맘 편함." />
 
         <RadioButton
-            android:id="@+id/F3"
+            android:id="@+id/P3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="“남은 공부는 내일의 내가 할 것이라 믿음.”" />
@@ -139,6 +140,5 @@
         android:text="친구들과 여행을 가기로 했다."
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="437dp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

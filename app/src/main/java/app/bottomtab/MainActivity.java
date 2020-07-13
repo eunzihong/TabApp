@@ -12,7 +12,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import app.bottomtab.ui.contact.ContactFragment;
 import app.bottomtab.ui.image.ImagesFragment;
-import app.bottomtab.ui.notifications.FunMbtiFragment1;
+import app.bottomtab.ui.notifications.FunMbtiFragment_start;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTransaction ft;
     private ContactFragment frag1;
     private ImagesFragment frag2;
-    private FunMbtiFragment1 frag3;
+    private FunMbtiFragment_start frag3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });
         frag1 = new ContactFragment();
         frag2 = new ImagesFragment();
-        frag3 = new FunMbtiFragment1();
+        frag3 = new FunMbtiFragment_start();
         setFrag(0);
 
         // Passing each menu ID as a set of Ids because each

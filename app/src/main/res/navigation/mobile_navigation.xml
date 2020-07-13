@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="app.bottomtab.ui.notifications.FunMbtiFragment1"
+        android:name="app.bottomtab.ui.notifications.FunMbtiFragment_start"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
