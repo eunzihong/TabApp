@@ -18,26 +18,23 @@ public class FunMbtiFragment_result extends Fragment {
     private View view;
     private ImageView imageView;
 
-    private String EI, SI, TF, JP;
     private String type;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        type = getArguments().getString("fromFrag4");
 
         view = inflater.inflate(R.layout.fragment_mbti_result, container, false);
 
         imageView = (ImageView) view.findViewById(R.id.imageView);
-
+        show_type();
         return view;
     }
 
 
 
-
-
-    public void onClick_01 (View v) {
-        type = EI + SI + TF + JP;
+    private void show_type() {
         if (type.equals( "enfj")) {
             imageView.setImageResource(R.drawable.enfj);
         }

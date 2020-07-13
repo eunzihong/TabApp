@@ -40,17 +40,18 @@ public class FunMbtiFragment4 extends Fragment {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle(); // 무언가를 담을 수 있는 것 : bundle
-                bundle.putString("fromFrag1", "홍드로이드 프래그먼트 2"); // 넘겨줄 값
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 // transaction : fragment를 관리함
 
                 FunMbtiFragment_result funMbtiFragment_result = new FunMbtiFragment_result();
-                funMbtiFragment_result.setArguments(bundle);
                 // setArguments : fragment안에 bundle을 넣어줌
 
                 sum = check1 + check2 + check3;
-                String[] tmp = {"000", "111", "222", "333"};
-                Toast.makeText(context, tmp[sum], Toast.LENGTH_SHORT).show();
+                String[] tmp = {"j", "j", "p", "p"};
+                String fromfrag3 = getArguments().getString("fromFrag3");
+                bundle.putString("fromFrag4", fromfrag3 + tmp[sum]); // 넘겨줄 값
+                funMbtiFragment_result.setArguments(bundle);
+                Toast.makeText(context,fromfrag3 + tmp[sum], Toast.LENGTH_SHORT).show();
 
                 transaction.replace(R.id.main_frame, funMbtiFragment_result);
                 transaction.commit();

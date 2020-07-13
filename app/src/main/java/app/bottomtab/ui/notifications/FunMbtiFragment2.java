@@ -25,6 +25,7 @@ public class FunMbtiFragment2 extends Fragment {
     int check1, check2, check3, sum;
 
     private Context context;
+    String fromfrag1;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -36,21 +37,23 @@ public class FunMbtiFragment2 extends Fragment {
         SN3 = view.findViewById(R.id.SN3);
         context = container.getContext();
 
+        fromfrag1 = getArguments().getString("fromFrag1");
+
         btn_prev2.setOnClickListener(new View.OnClickListener() { // fragment 2로 이동한다.
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle(); // 무언가를 담을 수 있는 것 : bundle
-                bundle.putString("fromFrag1", "홍드로이드 프래그먼트 2"); // 넘겨줄 값
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 // transaction : fragment를 관리함
 
                 FunMbtiFragment3 funMbtiFragment3 = new FunMbtiFragment3();
-                funMbtiFragment3.setArguments(bundle);
                 // setArguments : fragment안에 bundle을 넣어줌
 
                 sum = check1 + check2 + check3;
-                String[] tmp = {"000", "111", "222", "333"};
-                Toast.makeText(context, tmp[sum], Toast.LENGTH_SHORT).show();
+                String[] tmp = {"s", "s", "n", "n"};
+                bundle.putString("fromFrag2", fromfrag1 + tmp[sum]); // 넘겨줄 값
+                funMbtiFragment3.setArguments(bundle);
+                Toast.makeText(context, fromfrag1 +tmp[sum], Toast.LENGTH_SHORT).show();
 
 
                 transaction.replace(R.id.main_frame, funMbtiFragment3);
