@@ -7,7 +7,7 @@ import android.provider.ContactsContract;
 
 import java.util.ArrayList;
 
-// 휴대폰 URI로부터 연락처 정보 얻어와서 Contact class에 저장
+// Load contacts from the device and return Contact list
 public class ContactUtil {
 
     private Context context;

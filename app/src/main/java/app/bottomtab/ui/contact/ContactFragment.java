@@ -1,3 +1,7 @@
+/*
+ * Create by Eunji Hong on 2020. 7. 14
+ * Copyright (c) 2020. Eunji Hong. All right reserved
+ */
 package app.bottomtab.ui.contact;
 
 import android.Manifest;
@@ -27,7 +31,6 @@ import app.bottomtab.R;
 public class ContactFragment extends Fragment {
 
     private RecyclerAdapter adapter;
-
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

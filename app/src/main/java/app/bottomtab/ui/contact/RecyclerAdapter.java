@@ -1,6 +1,5 @@
 package app.bottomtab.ui.contact;
 
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +16,7 @@ import app.bottomtab.R;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemViewHolder> {
 
-    // adapter에 들어갈 list 입니다.
+    // Data(Contact class) list for adapter
     private ArrayList<Contact> listData = new ArrayList<>();
 
     @NonNull
@@ -38,17 +37,16 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
 
     @Override
     public int getItemCount() {
-        // RecyclerView의 총 개수 입니다.
+        // RecyclerView Item number
         return listData.size();
     }
 
     void addItem(Contact data) {
-        // 외부에서 item을 추가시킬 함수입니다.
         listData.add(data);
     }
 
-    // RecyclerView의 핵심인 ViewHolder 입니다.
-    // 여기서 subView를 setting 해줍니다.
+    // ViewHolder of RecyclerView
+    // Setting subViews consisting the ItemView
     class ItemViewHolder extends RecyclerView.ViewHolder {
 
         private TextView textView1;
