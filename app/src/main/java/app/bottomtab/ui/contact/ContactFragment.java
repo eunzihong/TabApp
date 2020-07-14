@@ -35,14 +35,15 @@ public class ContactFragment extends Fragment {
         final androidx.recyclerview.widget.RecyclerView ContactView =
                 root.findViewById(R.id.recyclerview_contacts);
 
-        // Permission setting
-//        getPermission(Manifest.permission.READ_CONTACTS);
 
         // RecyclerView setting
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         ContactView.setLayoutManager(linearLayoutManager);
         adapter = new RecyclerAdapter();
         ContactView.setAdapter(adapter);
+
+//      // READ_CONTACTS permission request
+//        getPermission(Manifest.permission.READ_CONTACTS);
 
         // Recycler adapter contact data setting
         setJSONcontacts(adapter, "contacts.json");  // Load contact data from contacts.json
@@ -52,26 +53,6 @@ public class ContactFragment extends Fragment {
         return root;
     }
 
-    // Permission request via TedPermission
-//    public void getPermission(String permissionId){
-//        PermissionListener permissionListener = new PermissionListener() {
-//            @Override
-//            public void onPermissionGranted() {
-//                Toast.makeText(getActivity(), "Permission Granted", Toast.LENGTH_SHORT).show();
-//            }
-//            @Override
-//            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
-//                Toast.makeText(getActivity(), "Permission Denied: "+deniedPermissions.get(0), Toast.LENGTH_SHORT).show();
-//            }
-//        };
-//
-//        new TedPermission(getActivity())
-//                .setPermissionListener(permissionListener)
-//                .setRationaleMessage("READ_CONTACTS permission required for load the user's contacts data")
-//                .setDeniedMessage("READ_CONTACTS permission denied: move to setting->privacy->permission")
-//                .setPermissions(permissionId)
-//                .check();
-//    }
 
     // Load contact data from json database
     public void setJSONcontacts(RecyclerAdapter adapter, String filename){
@@ -129,5 +110,26 @@ public class ContactFragment extends Fragment {
             adapter.addItem(phoneBook.get(i));
         }
     }
+
+    //  // Permission request via TedPermission
+//    public void getPermission(String permissionId){
+//        PermissionListener permissionListener = new PermissionListener() {
+//            @Override
+//            public void onPermissionGranted() {
+//                Toast.makeText(getActivity(), "Permission Granted", Toast.LENGTH_SHORT).show();
+//            }
+//            @Override
+//            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
+//                Toast.makeText(getActivity(), "Permission Denied: "+deniedPermissions.get(0), Toast.LENGTH_SHORT).show();
+//            }
+//        };
+//
+//        new TedPermission(getActivity())
+//                .setPermissionListener(permissionListener)
+//                .setRationaleMessage("READ_CONTACTS permission required for load the user's contacts data")
+//                .setDeniedMessage("READ_CONTACTS permission denied: move to setting->privacy->permission")
+//                .setPermissions(permissionId)
+//                .check();
+//    }
 
 }

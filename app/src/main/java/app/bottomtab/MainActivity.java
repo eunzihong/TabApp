@@ -1,21 +1,19 @@
 package app.bottomtab;
 
 import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.os.Message;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.gun0912.tedpermission.PermissionListener;
-import com.gun0912.tedpermission.TedPermission;
-
-import java.util.ArrayList;
 
 import app.bottomtab.ui.contact.ContactFragment;
 import app.bottomtab.ui.image.ImagesFragment;
@@ -33,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private ImagesFragment imagesFragment;
     private FunMbtiFragment_start funMbtiFragmentStart;
 
-    public PermissionHandler permissionHandler = new PermissionHandler();
+    static final int READ_CONTACTS_PERMISSON = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,12 +62,12 @@ public class MainActivity extends AppCompatActivity {
         contactFragment = new ContactFragment();
         imagesFragment = new ImagesFragment();
         funMbtiFragmentStart = new FunMbtiFragment_start();
-
         setFragment(0);
 
         getPermission(Manifest.permission.READ_CONTACTS);
 
     }
+
     private void setFragment(int n) {
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();
@@ -89,45 +88,29 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void getPermission(String permissionId){
-        PermissionListener permissionListener = new PermissionListener() {
-            @Override
-            public void onPermissionGranted() {
-                Toast.makeText(MainActivity.this,
-                        "Permission Granted", Toast.LENGTH_SHORT).show();
-                permissionHandler.sendEmptyMessage(MESSAGE_PERMISSION_GRANTED);
-            }
-            @Override
-            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
-                Toast.makeText(MainActivity.this,
-                        "Permission Denied: "+deniedPermissions.get(0),
-                        Toast.LENGTH_SHORT).show();
-                permissionHandler.sendEmptyMessage(MESSAGE_PERMISSION_DENIED);
-            }
-        };
-        new TedPermission(MainActivity.this)
-                .setPermissionListener(permissionListener)
-                .setRationaleMessage("READ CONTACTS permission required")
-                .setPermissions(permissionId)
-                .check();
-    }
+    public void getPermission(String permissionId){
+        int permissonCheck = ContextCompat.checkSelfPermission(this, permissionId);
 
-    private class PermissionHandler extends app.bottomtab.PermissionHandler {
-        @Override
-        public void handleMessage(@NonNull Message msg) {
-            super.handleMessage(msg);
-            switch(msg.what){
-                case MESSAGE_PERMISSION_GRANTED:
-                    break;
-                case MESSAGE_PERMISSION_DENIED:
-                    finish();
-                    break;
-                default:
-                    super.handleMessage(msg);
-                    break;
+        if(permissonCheck == PackageManager.PERMISSION_GRANTED){
+            Toast.makeText(getApplicationContext(),
+                    permissionId + " permission granted", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(getApplicationContext(),
+                    permissionId + " permission denied", Toast.LENGTH_SHORT).show();
+
+            if(ActivityCompat.shouldShowRequestPermissionRationale(this, permissionId)){
+                // Explanation for permission requirement
+                Toast.makeText(getApplicationContext(),
+                        permissionId + " 권한이 필요합니다.", Toast.LENGTH_SHORT).show();
+                ActivityCompat.requestPermissions(this,
+                        new String[]{ Manifest.permission.READ_CONTACTS}, READ_CONTACTS_PERMISSON);
+            }else{
+                ActivityCompat.requestPermissions(this,
+                        new String[]{ Manifest.permission.READ_CONTACTS}, READ_CONTACTS_PERMISSON);
             }
         }
     }
+
 
 
 }
