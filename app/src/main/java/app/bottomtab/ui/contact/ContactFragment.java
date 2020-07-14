@@ -36,7 +36,7 @@ public class ContactFragment extends Fragment {
                 root.findViewById(R.id.recyclerview_contacts);
 
         // Permission setting
- //       getPermission(Manifest.permission.READ_CONTACTS);
+//        getPermission(Manifest.permission.READ_CONTACTS);
 
         // RecyclerView setting
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
@@ -64,9 +64,11 @@ public class ContactFragment extends Fragment {
 //                Toast.makeText(getActivity(), "Permission Denied: "+deniedPermissions.get(0), Toast.LENGTH_SHORT).show();
 //            }
 //        };
+//
 //        new TedPermission(getActivity())
 //                .setPermissionListener(permissionListener)
-//                .setRationaleMessage("READ CONTACTS permission required")
+//                .setRationaleMessage("READ_CONTACTS permission required for load the user's contacts data")
+//                .setDeniedMessage("READ_CONTACTS permission denied: move to setting->privacy->permission")
 //                .setPermissions(permissionId)
 //                .check();
 //    }
