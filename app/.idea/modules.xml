@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-700809575/BottomTab.iml" filepath="$PROJECT_DIR$/.idea/modules/-700809575/BottomTab.iml" group="BottomTab" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BottomTab-app.iml" filepath="$PROJECT_DIR$/.idea/modules/BottomTab-app.iml" group="BottomTab/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-700809575/TabApp-BottomTab.iml" filepath="$PROJECT_DIR$/.idea/modules/-700809575/TabApp-BottomTab.iml" group="BottomTab" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="BottomTab/app" />
     </modules>
   </component>

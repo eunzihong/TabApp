@@ -6,17 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_back1"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginLeft="16dp"-->
-<!--        android:layout_marginBottom="65dp"-->
-<!--        android:text="이전으로"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
-
     <Button
         android:id="@+id/btn_prev1"
         android:layout_width="0dp"
@@ -27,22 +16,6 @@
         android:text="다음으로"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-
-<!--Extroversion, Introversion -->
 
     <RadioGroup
         android:id="@+id/EI1"
