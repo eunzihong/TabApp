@@ -50,7 +50,6 @@ public class FunMbtiFragment1 extends Fragment {
                 String[] tmp = {"e", "e", "i", "i"};
                 bundle.putString("fromFrag1", tmp[sum]); // 넘겨줄 값
 
-                Toast.makeText(context, tmp[sum], Toast.LENGTH_SHORT).show();
 
                 FunMbtiFragment2 funMbtiFragment2 = new FunMbtiFragment2();
                 funMbtiFragment2.setArguments(bundle);

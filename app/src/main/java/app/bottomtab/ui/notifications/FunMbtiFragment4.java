@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioGroup;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -31,6 +29,7 @@ public class FunMbtiFragment4 extends Fragment {
         view = inflater.inflate(R.layout.fragment_mbti4, container, false);
         btn_prev4 = view.findViewById(R.id.btn_prev4);
 
+
         JP1 = view.findViewById(R.id.JP1);
         JP2 = view.findViewById(R.id.JP2);
         JP3 = view.findViewById(R.id.JP3);
@@ -51,7 +50,6 @@ public class FunMbtiFragment4 extends Fragment {
                 String fromfrag3 = getArguments().getString("fromFrag3");
                 bundle.putString("fromFrag4", fromfrag3 + tmp[sum]); // 넘겨줄 값
                 funMbtiFragment_result.setArguments(bundle);
-//                Toast.makeText(context,fromfrag3 + tmp[sum], Toast.LENGTH_SHORT).show();
 
                 transaction.replace(R.id.main_frame, funMbtiFragment_result);
                 transaction.commit();

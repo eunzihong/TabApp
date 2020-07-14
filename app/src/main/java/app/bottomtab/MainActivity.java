@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     static final int READ_CONTACTS_PERMISSON = 1;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,22 +40,22 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.nav_view); //navigation bar
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.navigation_contacts:
-                        setFragment(0);
-                        break;
-                    case R.id.navigation_images:
-                        setFragment(1);
-                        break;
-                    case R.id.navigation_notifications:
-                        setFragment(2);
-                        break;
-                }
-                return false;
-            }
-        });
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                        switch (menuItem.getItemId()) {
+                            case R.id.navigation_contacts:
+                                setFragment(0);
+                                break;
+                            case R.id.navigation_images:
+                                setFragment(1);
+                                break;
+                            case R.id.navigation_notifications:
+                                setFragment(2);
+                                break;
+                        }
+                        return false;
+                    }
+                });
 
         contactFragment = new ContactFragment();
         imagesFragment = new ImagesFragment();

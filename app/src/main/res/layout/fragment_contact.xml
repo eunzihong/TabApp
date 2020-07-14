@@ -11,5 +11,4 @@
     tools:context=".ui.contact.ContactFragment">
 
 
-
 </androidx.recyclerview.widget.RecyclerView>
