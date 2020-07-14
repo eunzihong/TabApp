@@ -53,7 +53,6 @@ public class FunMbtiFragment2 extends Fragment {
                 String[] tmp = {"s", "s", "n", "n"};
                 bundle.putString("fromFrag2", fromfrag1 + tmp[sum]); // 넘겨줄 값
                 funMbtiFragment3.setArguments(bundle);
-//                Toast.makeText(context, fromfrag1 +tmp[sum], Toast.LENGTH_SHORT).show();
 
 
                 transaction.replace(R.id.main_frame, funMbtiFragment3);

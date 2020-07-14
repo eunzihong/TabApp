@@ -6,18 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_back2"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginLeft="16dp"-->
-<!--        android:layout_marginBottom="65dp"-->
-<!--        android:text="이전으로"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
-
-
     <Button
         android:id="@+id/btn_prev2"
         android:layout_width="0dp"
@@ -25,24 +13,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="65dp"
-        android:text="다음으로"
+        android:text="@string/nextbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-
-    <!--Extroversion, Introversion -->
 
     <RadioGroup
         android:id="@+id/SN1"
@@ -58,13 +31,13 @@
             android:id="@+id/S1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“위험하겠다. 밤에 돌아다니기 말자.”" />
+            android:text="@string/a2_1_1" />
 
         <RadioButton
             android:id="@+id/N1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“무슨 일이지? 누가 어떻게 됐나?”" />
+            android:text="@string/a2_1_2" />
     </RadioGroup>
 
     <RadioGroup
@@ -80,13 +53,13 @@
             android:id="@+id/S2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“저 앞 은행에서 좌회전해서 100m 정도 \n 더 걸어가시면 바로 우측에 있어요!”" />
+            android:text="@string/a2_2_1" />
 
         <RadioButton
             android:id="@+id/N2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“(손짓으로) 요기서 저~기까지 가신 다음에 \n 이쪽으로 가시면 있어요”" />
+            android:text="@string/a2_2_2" />
     </RadioGroup>
 
     <RadioGroup
@@ -104,13 +77,13 @@
             android:id="@+id/S3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text='"계획이 먼저지! 내가 부족한 과목이 뭐지?"' />
+            android:text='@string/a2_3_1' />
 
         <RadioButton
             android:id="@+id/N3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text='"하다 보면 다 하겠지~ 지금은 수학이 끌리는데?"' />
+            android:text="@string/a2_3_2" />
     </RadioGroup>
 
     <TextView
@@ -119,7 +92,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="#EA9DB6"
-        android:text="우리 동네에 범죄가 발생했다. 내가 드는 생각은?"
+        android:text="@string/q2_1"
+        android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/SN1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -132,7 +106,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#EA9DB6"
-        android:text="모르는 사람이 길을 물어봤다! 나의 반응은?"
+        android:text="@string/q2_2"
+        android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/SN2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -145,7 +120,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#EA9DB6"
-        android:text="시험공부를 할때 나의 유형은?"
+        android:text="@string/q2_3"
+        android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/SN3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
