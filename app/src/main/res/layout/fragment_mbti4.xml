@@ -6,51 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_back4"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginLeft="16dp"-->
-<!--        android:layout_marginBottom="65dp"-->
-<!--        android:text="이전으로"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
-
     <Button
         android:id="@+id/btn_prev4"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="65dp"
-        android:text="결과보기!"
+        android:text="@string/resultbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-    <!--    -->
-
-    <!--Juding Perceiving-->
-    <!--Extroversion, Introversion -->
 
     <RadioGroup
         android:id="@+id/JP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13">
 
@@ -58,19 +31,22 @@
             android:id="@+id/J1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“첫째 날엔 이거 하고, 둘째 날에 그거 하고, \n 셋째 날엔 저거 하자. 어때?”" />
+            android:fontFamily="@font/taja"
+            android:text="@string/a4_1_1" />
 
         <RadioButton
             android:id="@+id/P1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“비행기랑 숙소 예약! 준비 끝!”" />
+            android:fontFamily="@font/sinbi7"
+            android:text="@string/a4_1_2" />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/JP2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,13 +56,15 @@
             android:id="@+id/J2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="스트레스 받음. 어떻게든 오늘 끝내야 맘 편함." />
+            android:fontFamily="@font/taja"
+            android:text="@string/a4_2_1" />
 
         <RadioButton
             android:id="@+id/P2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="남은 공부는 내일의 내가 할 것이라 믿음." />
+            android:fontFamily="@font/sinbi7"
+            android:text="@string/a4_2_2" />
     </RadioGroup>
 
     <RadioGroup
@@ -94,9 +72,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11">
 
@@ -104,13 +82,15 @@
             android:id="@+id/J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text='"아니 왜 이걸 이제 말해"' />
+            android:fontFamily="@font/taja"
+            android:text="@string/a4_3_1" />
 
         <RadioButton
             android:id="@+id/P3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text='"뭐 금방 오겠지~ 늦을 수도 있지~"' />
+            android:fontFamily="@font/sinbi7"
+            android:text="@string/a4_3_2" />
     </RadioGroup>
 
     <TextView
@@ -119,10 +99,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="#F8ED8F"
-        android:text=" 친구들과 여행을 가기로 했다. 나의 유형은?"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/q4_1"
+        android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/JP1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -132,10 +113,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#F8ED8F"
-        android:text="오늘 하기로 한 공부를 다 못 끝낼 것 같다."
+        android:layout_gravity="center_horizontal"
+        android:text="@string/q4_2"
+        android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/JP2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/JP1" />
 
@@ -145,7 +127,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#F8ED8F"
-        android:text="친구와의 약속에 정시에 나와 기다리고 있는데\n  늦을 것 같다고 연락이 왔다. 나의 반응은?"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/q4_3"
+        android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/JP3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/btn_prev2"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
@@ -21,9 +21,9 @@
         android:id="@+id/SN1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toTopOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9">
 
@@ -31,12 +31,14 @@
             android:id="@+id/S1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/syabeteu"
             android:text="@string/a2_1_1" />
 
         <RadioButton
             android:id="@+id/N1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sinbi7"
             android:text="@string/a2_1_2" />
     </RadioGroup>
 
@@ -44,6 +46,7 @@
         android:id="@+id/SN2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,12 +56,14 @@
             android:id="@+id/S2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/syabeteu"
             android:text="@string/a2_2_1" />
 
         <RadioButton
             android:id="@+id/N2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sinbi7"
             android:text="@string/a2_2_2" />
     </RadioGroup>
 
@@ -67,9 +72,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15">
 
@@ -77,12 +82,14 @@
             android:id="@+id/S3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/syabeteu"
             android:text='@string/a2_3_1' />
 
         <RadioButton
             android:id="@+id/N3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sinbi7"
             android:text="@string/a2_3_2" />
     </RadioGroup>
 
@@ -92,11 +99,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="#EA9DB6"
+        android:layout_gravity="center_horizontal"
         android:text="@string/q2_1"
         android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/SN1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -106,11 +113,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#EA9DB6"
+        android:layout_gravity="center_horizontal"
         android:text="@string/q2_2"
         android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/SN2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SN1" />
 
@@ -120,6 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#EA9DB6"
+        android:layout_gravity="center_horizontal"
         android:text="@string/q2_3"
         android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/SN3"

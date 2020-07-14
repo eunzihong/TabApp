@@ -21,8 +21,6 @@ import app.bottomtab.ui.notifications.FunMbtiFragment_start;
 
 
 public class MainActivity extends AppCompatActivity {
-    private static final int MESSAGE_PERMISSION_GRANTED = 101;
-    private static final int MESSAGE_PERMISSION_DENIED = 102;
 
     private BottomNavigationView bottomNavigationView;
     private FragmentManager fm;
@@ -32,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     private FunMbtiFragment_start funMbtiFragmentStart;
 
     static final int READ_CONTACTS_PERMISSON = 1;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

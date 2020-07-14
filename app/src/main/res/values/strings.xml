@@ -6,6 +6,7 @@
     <string name="title_mbti">MBTI 검사</string>
     <string name="startbutton">시작하기</string>
     <string name="nextbutton">다음으로</string>
+    <string name="resultbutton">결과 보기!</string>
     <string name="q1_1">Q1-1. 친구가 요즘 나한테 뭔가 화난 것처럼 보인다. \n 나는 친구에게 어떻게 할까?</string>
     <string name="a1_1_1"> 뭐가 문제인지, 왜 화가 났는지 바로 물어본다.</string>
     <string name="a1_1_2"> 1주든 한 달이든 내 생각이 충분히 정리되면 연락한다.</string>
@@ -24,5 +25,23 @@
     <string name="q2_3">Q2-3. 시험공부를 할때 나의 유형은?</string>
     <string name="a2_3_1"> \"계획이 먼저지! 내가 부족한 과목이 뭐지?\"</string>
     <string name="a2_3_2"> \"하다 보면 다 하겠지~ 지금은 수학이 끌리는데?\"</string>
+    <string name="q3_1">Q3-1. 친구를 위해 3시간 동안 머핀을 만들어서 줬는데, 내가 먹어봐도\n 심각하게 달다. 친구가 나에게 해줬으면 하는 말은?</string>
+    <string name="a3_1_1"> \“날 위해서 3시간이나 만들었다고? 진짜 감동이야ㅠㅠ\”</string>
+    <string name="a3_1_2"> \“나쁘지 않은데? 근데 좀 단 것 같아서, \n 다음엔 덜 달게 하면 완벽할 것 같아! 고마워!\”</string>
+    <string name="q3_2">Q3-2. 친구가 시험을 망쳤다고 속상해한다. 당신이 할 말은?</string>
+    <string name="a3_2_1"> \“아니야 이번에 다 어려웠대ㅠㅠㅠ 나도 이번에 망쳤어..\”</string>
+    <string name="a3_2_2"> \“어디서 틀렸는데? 그 부분을 더 보완하면 \n 다음엔 더 잘 볼 수 있을 거야\” </string>
+    <string name="q3_3">Q3-3. 친구가 \“나 오늘 너무 피곤해서 머리 안 감고 \n 드라이 샴푸 하고 왔어\”라고 했다. 당신의 반응은?</string>
+    <string name="a3_3_1"> \“오 진짜 티 안 난다! 어제 늦게 잤어?\”</string>
+    <string name="a3_3_2"> \“근데 드라이 샴푸랑 그냥 머리를 감는거랑 차이가 뭐야? \”</string>
+    <string name="q4_1">Q4-1. 친구들과 여행을 가기로 했다. 나의 유형은?</string>
+    <string name="a4_1_1"> \“첫째 날엔 이거 하고, 둘째 날에 그거 하고, \n 셋째 날엔 저거 하자. 어때?\”</string>
+    <string name="a4_1_2"> \“비행기랑 숙소 예약! 준비 끝!\”</string>
+    <string name="q4_2">Q4-2. 오늘 하기로 한 공부를 다 못 끝낼 것 같다.</string>
+    <string name="a4_2_1"> 스트레스 받음. 어떻게든 오늘 끝내야 맘 편함.</string>
+    <string name="a4_2_2"> 남은 공부는 내일의 내가 할 것이라 믿음.</string>
+    <string name="q4_3">Q4-3. 친구와의 약속에 정시에 나와 기다리고 있는데\n 늦을 것 같다고 연락이 왔다. 나의 반응은?</string>
+    <string name="a4_3_1"> \"아니 왜 이걸 이제 말해\"</string>
+    <string name="a4_3_2"> \"뭐 금방 오겠지~ 늦을 수도 있지~\"</string>
 
 </resources>

@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/btn_prev3"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
@@ -22,9 +22,9 @@
         android:id="@+id/TF1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
@@ -32,19 +32,22 @@
             android:id="@+id/T1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“날 위해서 3시간이나 만들었다고? 진짜 감동이야ㅠㅠ”" />
+            android:fontFamily="@font/jolrida"
+            android:text="@string/a3_1_1" />
 
         <RadioButton
             android:id="@+id/F1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“나쁘지 않은데? 근데 좀 단 것 같아서, \n 다음엔 덜 달게 하면 완벽할 것 같아! 고마워!”" />
+            android:fontFamily="@font/pilgi"
+            android:text="@string/a3_1_2" />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/TF2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,13 +57,15 @@
             android:id="@+id/T2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“아니야 이번에 다 어려웠대ㅠㅠㅠ 나도 이번에 망쳤어..”" />
+            android:fontFamily="@font/jolrida"
+            android:text="@string/a3_2_1" />
 
         <RadioButton
             android:id="@+id/F2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“어디서 틀렸는데? 그 부분을 더 보완하면 \n 다음엔 더 잘 볼 수 있을 거야”" />
+            android:fontFamily="@font/pilgi"
+            android:text="@string/a3_2_2" />
     </RadioGroup>
 
     <RadioGroup
@@ -68,9 +73,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10">
 
@@ -78,13 +83,15 @@
             android:id="@+id/T3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="“오 진짜 티 안 난다! 어제 늦게 잤어?”" />
+            android:fontFamily="@font/jolrida"
+            android:text="@string/a3_3_1" />
 
         <RadioButton
             android:id="@+id/F3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="“근데 드라이 샴푸랑 그냥 머리를 감는거랑 차이가 뭐야?”" />
+            android:fontFamily="@font/pilgi"
+            android:text="@string/a3_3_2" />
     </RadioGroup>
 
     <TextView
@@ -93,10 +100,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="#B5DD88"
-        android:text="친구를 위해 3시간 동안 머핀을 만들어서 줬는데, 내가 먹어봐도\n  심각하게 달다. 친구가 나에게 해줬으면 하는 말은?"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/q3_1"
+        android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/TF1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -106,10 +114,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#B5DD88"
-        android:text="친구가 시험을 망쳤다고 속상해한다. 당신이 할 말은?"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/q3_2"
+        android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/TF2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TF1" />
 
@@ -119,7 +128,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#B5DD88"
-        android:text="친구가 “나 오늘 너무 피곤해서 머리 안 감고 \n 드라이 샴푸 하고 왔어”라고 했다. 당신의 반응은?"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/q3_3"
+        android:fontFamily="@font/barunpenb"
         app:layout_constraintBottom_toTopOf="@+id/TF3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
