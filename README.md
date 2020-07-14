@@ -16,7 +16,9 @@ Screenshots
 각 탭에 대한 설명 :
 --------------------
   <1번탭> 
-  - 설명 필요
+  - RecyclerView를 통해 주소록 표현(RecylcerView adapter, viewholder, Contact class 등 정의)
+  - 연락처 json 파일을 파싱하여 주소록에 표현(이름, 전화번호, 프로필사진)
+  - READ_CONTACTS 권한을 얻어 주소록의 데이터를 앱 내부 주소록 화면에서 표시
   
   <2번탭> 
   - gridview를 통해 이미지를 표현 
