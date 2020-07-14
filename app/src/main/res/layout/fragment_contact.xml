@@ -9,6 +9,4 @@
     android:paddingBottom="64dp"
     app:layout_constraintTop_toTopOf="@+id/container"
     tools:context=".ui.contact.ContactFragment">
-
-
 </androidx.recyclerview.widget.RecyclerView>

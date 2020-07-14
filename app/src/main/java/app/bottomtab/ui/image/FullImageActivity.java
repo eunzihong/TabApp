@@ -21,7 +21,7 @@ public class FullImageActivity extends Activity {
         int position = i.getExtras().getInt("id");
         ImageAdapter imageAdapter = new ImageAdapter(this);
         ImageView imageView = (ImageView) findViewById(R.id.full_image_view);
-        imageView.setImageResource(imageAdapter.thumbImages[position]);
+        imageView.setImageResource(imageAdapter.Images[position]);
     }
 }
 

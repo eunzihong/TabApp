@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
 
@@ -25,6 +26,14 @@ public class ImagesFragment extends Fragment {
         GridView gv = (GridView) root.findViewById(R.id.gridview);
         gv.setAdapter(new ImageAdapter(getActivity()));
 
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                
+            }
+        });
+
         return root;
     }
+
 }
