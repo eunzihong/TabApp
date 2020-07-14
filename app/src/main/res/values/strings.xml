@@ -3,4 +3,25 @@
     <string name="title_contact">Contacts</string>
     <string name="title_image">Images</string>
     <string name="title_notifications">fun MBTI</string>
+    <string name="title_mbti">MBTI 검사</string>
+    <string name="startbutton">시작하기</string>
+    <string name="nextbutton">다음으로</string>
+    <string name="q1_1">Q1-1. 친구가 요즘 나한테 뭔가 화난 것처럼 보인다. \n 나는 친구에게 어떻게 할까?</string>
+    <string name="a1_1_1"> 뭐가 문제인지, 왜 화가 났는지 바로 물어본다.</string>
+    <string name="a1_1_2"> 1주든 한 달이든 내 생각이 충분히 정리되면 연락한다.</string>
+    <string name="q1_2">Q1-2. 1:1로 밥을 먹기로 했는데, 후배가 아무 말 없이 \n 친구 한 명을 더 데려왔다. 당신의 반응은?</string>
+    <string name="a1_2_1"> \"사람 많으면 좋지~~ 넌 어느 과야? \n 같이 가자! 뭐 먹을래? \"</string>
+    <string name="a1_2_2"> \" 어..! 안녕...!! 같이 먹을..래? ㅎㅎ;; \"</string>
+    <string name="q1_3">Q1-3. 내가 이메일을 보냈는데 상대방이 하루가 \n  지나도 회신하지 않는다. 내가 드는 생각은?</string>
+    <string name="a1_3_1"> \"이 친구 바쁘구만~ \"</string>
+    <string name="a1_3_2"> \"내가 혹시 말실수를 했나?\"</string>
+    <string name="q2_1">Q2-1. 우리 동네에 범죄가 발생했다. 내가 드는 생각은?</string>
+    <string name="a2_1_1"> \“위험하겠다. 밤에 돌아다니기 말자.\”</string>
+    <string name="a2_1_2"> \“무슨 일이지? 누가 어떻게 됐나?\”</string>
+    <string name="q2_2">Q2-2. 모르는 사람이 길을 물어봤다! 나의 반응은?</string>
+    <string name="a2_2_1"> \“저 앞 은행에서 좌회전해서 100m 정도 \n 더 걸어가시면 바로 우측에 있어요!\”</string>
+    <string name="a2_2_2"> \“(손짓으로) 요기서 저~기까지 가신 다음에 \n 이쪽으로 가시면 있어요\”</string>
+    <string name="q2_3">Q2-3. 시험공부를 할때 나의 유형은?</string>
+    <string name="a2_3_1"> \"계획이 먼저지! 내가 부족한 과목이 뭐지?\"</string>
+    <string name="a2_3_2"> \"하다 보면 다 하겠지~ 지금은 수학이 끌리는데?\"</string>
 </resources>

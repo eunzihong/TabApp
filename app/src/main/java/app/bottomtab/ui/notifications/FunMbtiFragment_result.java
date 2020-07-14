@@ -35,54 +35,57 @@ public class FunMbtiFragment_result extends Fragment {
 
 
     private void show_type() {
-        if (type.equals( "enfj")) {
-            imageView.setImageResource(R.drawable.enfj);
-        }
-        else if (type.equals( "enfp")) {
-            imageView.setImageResource(R.drawable.enfp);
-        }
-        else if (type.equals( "entj")) {
-            imageView.setImageResource(R.drawable.entj);
-        }
-        else if (type.equals("entp")) {
-            imageView.setImageResource(R.drawable.entp);
-        }
-        else if (type.equals( "esfj")) {
-            imageView.setImageResource(R.drawable.esfj);
-        }
-        else if (type.equals( "estj")) {
-            imageView.setImageResource(R.drawable.estj);
-        }
-        else if (type.equals( "infj")) {
-            imageView.setImageResource(R.drawable.infj);
-        }
-        else if (type.equals( "infp")) {
-            imageView.setImageResource(R.drawable.infp);
-        }
-        else if (type.equals( "intj")) {
-            imageView.setImageResource(R.drawable.intj);
-        }
-        else if (type.equals( "intp")) {
-            imageView.setImageResource(R.drawable.intp);
-        }
-        else if (type.equals( "isfj")) {
-            imageView.setImageResource(R.drawable.isfj);
-        }
-        else if (type.equals( "istj")) {
-            imageView.setImageResource(R.drawable.istj);
-        }
-        else if (type.equals( "istp")) {
-            imageView.setImageResource(R.drawable.istp);
-        }
-        else if (type.equals( "isfp")) {
-            imageView.setImageResource(R.drawable.isfp);
-        }
-        else if (type.equals( "estp")) {
-            imageView.setImageResource(R.drawable.estp);
-        }
-        else if (type.equals( "esfp")) {
-            imageView.setImageResource(R.drawable.esfp);
-        }
+//        getResources().getIdentifier(type, "drawable", getActivity().getPackageName());
+
+        imageView.setImageResource(getResources().getIdentifier(type, "drawable", getActivity().getPackageName()));
+//        if (type.equals( "enfj")) {
+//            imageView.setImageResource(R.drawable.enfj);
+//        }
+//        else if (type.equals( "enfp")) {
+//            imageView.setImageResource(R.drawable.enfp);
+//        }
+//        else if (type.equals( "entj")) {
+//            imageView.setImageResource(R.drawable.entj);
+//        }
+//        else if (type.equals("entp")) {
+//            imageView.setImageResource(R.drawable.entp);
+//        }
+//        else if (type.equals( "esfj")) {
+//            imageView.setImageResource(R.drawable.esfj);
+//        }
+//        else if (type.equals( "estj")) {
+//            imageView.setImageResource(R.drawable.estj);
+//        }
+//        else if (type.equals( "infj")) {
+//            imageView.setImageResource(R.drawable.infj);
+//        }
+//        else if (type.equals( "infp")) {
+//            imageView.setImageResource(R.drawable.infp);
+//        }
+//        else if (type.equals( "intj")) {
+//            imageView.setImageResource(R.drawable.intj);
+//        }
+//        else if (type.equals( "intp")) {
+//            imageView.setImageResource(R.drawable.intp);
+//        }
+//        else if (type.equals( "isfj")) {
+//            imageView.setImageResource(R.drawable.isfj);
+//        }
+//        else if (type.equals( "istj")) {
+//            imageView.setImageResource(R.drawable.istj);
+//        }
+//        else if (type.equals( "istp")) {
+//            imageView.setImageResource(R.drawable.istp);
+//        }
+//        else if (type.equals( "isfp")) {
+//            imageView.setImageResource(R.drawable.isfp);
+//        }
+//        else if (type.equals( "estp")) {
+//            imageView.setImageResource(R.drawable.estp);
+//        }
+//        else if (type.equals( "esfp")) {
+//            imageView.setImageResource(R.drawable.esfp);
+//        }
     }
 
 

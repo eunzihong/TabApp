@@ -17,13 +17,6 @@
 <!--        app:layout_constraintBottom_toBottomOf="parent"-->
 <!--        app:layout_constraintStart_toStartOf="parent" />-->
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4"
-        tools:layout_editor_absoluteY="16dp" />
-
     <Button
         android:id="@+id/btn_prev4"
         android:layout_width="0dp"
@@ -55,90 +48,107 @@
         android:id="@+id/JP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="129dp">
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
 
         <RadioButton
             android:id="@+id/J1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“비행기랑 숙소 예약! 준비 끝!”" />
+            android:text="“첫째 날엔 이거 하고, 둘째 날에 그거 하고, \n 셋째 날엔 저거 하자. 어때?”" />
 
         <RadioButton
             android:id="@+id/P1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“첫째 날엔 이거 하고, 둘째 날에 그거 하고, \n 셋째 날엔 저거 하자. 어때?”" />
+            android:text="“비행기랑 숙소 예약! 준비 끝!”" />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/JP2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="333dp">
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
 
         <RadioButton
             android:id="@+id/J2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="스트레스 받음. 어떻게든 오늘 끝내야 맘 편함." />
 
         <RadioButton
             android:id="@+id/P2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="남은 공부는 내일의 내가 할 것이라 믿음." />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/JP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="509dp">
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
 
         <RadioButton
             android:id="@+id/J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="“스트레스 받음. 어떻게든 오늘 끝내야 맘 편함." />
+            android:text='"아니 왜 이걸 이제 말해"' />
 
         <RadioButton
             android:id="@+id/P3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="“남은 공부는 내일의 내가 할 것이라 믿음.”" />
+            android:text='"뭐 금방 오겠지~ 늦을 수도 있지~"' />
     </RadioGroup>
 
     <TextView
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="오늘 하기로 한 공부를 다 못 끝낼 것 같다."
+        android:layout_marginTop="20dp"
+        android:background="#F8ED8F"
+        android:text=" 친구들과 여행을 가기로 했다. 나의 유형은?"
+        app:layout_constraintBottom_toTopOf="@+id/JP1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="66dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginTop="8dp"
+        android:background="#F8ED8F"
+        android:text="오늘 하기로 한 공부를 다 못 끝낼 것 같다."
+        app:layout_constraintBottom_toTopOf="@+id/JP2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintTop_toBottomOf="@+id/JP1" />
 
     <TextView
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="친구들과 여행을 가기로 했다."
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="437dp" />
+        android:layout_marginTop="8dp"
+        android:background="#F8ED8F"
+        android:text="친구와의 약속에 정시에 나와 기다리고 있는데\n  늦을 것 같다고 연락이 왔다. 나의 반응은?"
+        app:layout_constraintBottom_toTopOf="@+id/JP3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JP2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

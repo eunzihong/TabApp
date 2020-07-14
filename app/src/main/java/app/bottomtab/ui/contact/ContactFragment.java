@@ -4,19 +4,14 @@
  */
 package app.bottomtab.ui.contact;
 
-import android.Manifest;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
-import com.gun0912.tedpermission.PermissionListener;
-import com.gun0912.tedpermission.TedPermission;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,6 +27,7 @@ public class ContactFragment extends Fragment {
 
     private RecyclerAdapter adapter;
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_contact, container, false);
@@ -40,7 +36,7 @@ public class ContactFragment extends Fragment {
                 root.findViewById(R.id.recyclerview_contacts);
 
         // Permission setting
-        getPermission(Manifest.permission.READ_CONTACTS);
+ //       getPermission(Manifest.permission.READ_CONTACTS);
 
         // RecyclerView setting
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
@@ -57,23 +53,23 @@ public class ContactFragment extends Fragment {
     }
 
     // Permission request via TedPermission
-    public void getPermission(String permissionId){
-        PermissionListener permissionListener = new PermissionListener() {
-            @Override
-            public void onPermissionGranted() {
-                Toast.makeText(getActivity(), "Permission Granted", Toast.LENGTH_SHORT).show();
-            }
-            @Override
-            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
-                Toast.makeText(getActivity(), "Permission Denied: "+deniedPermissions.get(0), Toast.LENGTH_SHORT).show();
-            }
-        };
-        new TedPermission(getActivity())
-                .setPermissionListener(permissionListener)
-                .setRationaleMessage("READ CONTACTS permission required")
-                .setPermissions(permissionId)
-                .check();
-    }
+//    public void getPermission(String permissionId){
+//        PermissionListener permissionListener = new PermissionListener() {
+//            @Override
+//            public void onPermissionGranted() {
+//                Toast.makeText(getActivity(), "Permission Granted", Toast.LENGTH_SHORT).show();
+//            }
+//            @Override
+//            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
+//                Toast.makeText(getActivity(), "Permission Denied: "+deniedPermissions.get(0), Toast.LENGTH_SHORT).show();
+//            }
+//        };
+//        new TedPermission(getActivity())
+//                .setPermissionListener(permissionListener)
+//                .setRationaleMessage("READ CONTACTS permission required")
+//                .setPermissions(permissionId)
+//                .check();
+//    }
 
     // Load contact data from json database
     public void setJSONcontacts(RecyclerAdapter adapter, String filename){

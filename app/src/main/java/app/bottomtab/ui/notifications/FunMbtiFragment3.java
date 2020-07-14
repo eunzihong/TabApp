@@ -41,7 +41,8 @@ public class FunMbtiFragment3 extends Fragment {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle(); // 무언가를 담을 수 있는 것 : bundle
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentTransaction transaction =
+                        getActivity().getSupportFragmentManager().beginTransaction();
                 // transaction : fragment를 관리함
 
                 FunMbtiFragment4 funMbtiFragment4 = new FunMbtiFragment4();
