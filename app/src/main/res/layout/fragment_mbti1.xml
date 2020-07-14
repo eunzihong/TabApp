@@ -48,7 +48,7 @@
         android:id="@+id/EI1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,20 +58,20 @@
             android:id="@+id/E1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“비행기랑 숙소 예약! 준비 끝!”" />
+            android:text=" 뭐가 문제인지, 왜 화가 났는지 바로 물어본다." />
 
         <RadioButton
             android:id="@+id/I1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="“첫째 날엔 이거 하고, 둘째 날에 그거 하고, \n 셋째 날엔 저거 하자. 어때?”" />
+            android:text="1주든 한 달이든 내 생각이 충분히 정리되면 연락한다." />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/EI2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4">
@@ -80,20 +80,21 @@
             android:id="@+id/E2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text='"사람 많으면 좋지~~ 넌 어느 과야? \n 같이 가자! 뭐 먹을래?"' />
 
         <RadioButton
             android:id="@+id/I2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text=' "어..! 안녕...!! 같이 먹을..래? ㅎㅎ;;"' />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/EI3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="53dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,21 +104,22 @@
             android:id="@+id/E3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="“스트레스 받음. 어떻게든 오늘 끝내야 맘 편함." />
+            android:text="이 친구 바쁘구만~ " />
 
         <RadioButton
             android:id="@+id/I3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="“남은 공부는 내일의 내가 할 것이라 믿음.”" />
+            android:text="내가 혹시 말실수를 했나?" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="67dp"
-        android:text="오늘 하기로 한 공부를 다 못 끝낼 것 같다."
+        android:background="#6ED0DD"
+        android:text="친구가 요즘 나한테 뭔가 화난 것처럼 보인다. \n 나는 친구에게 어떻게 할까?"
+        app:layout_constraintBottom_toTopOf="@+id/EI1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,8 +129,10 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
-        android:text="TextView"
+        android:background="#6ED0DD"
+        android:layout_marginTop="32dp"
+        android:text="1:1로 밥을 먹기로 했는데, 후배가 아무 말 없이 \n 친구 한 명을 더 데려왔다. 당신의 반응은?"
+        app:layout_constraintBottom_toTopOf="@+id/EI2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -138,21 +142,17 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#6ED0DD"
         android:layout_marginStart="121dp"
         android:layout_marginLeft="121dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="121dp"
         android:layout_marginRight="121dp"
-        android:text="친구들과 여행을 가기로 했다."
+        android:text="내가 이메일을 보냈는데 상대방이 하루가 \n  지나도 회신하지 않는다. 내가 드는 생각은?"
+        app:layout_constraintBottom_toTopOf="@+id/EI3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EI2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        tools:layout_editor_absoluteY="16dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
