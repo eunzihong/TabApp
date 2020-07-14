@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         frag1 = new ContactFragment();
         frag2 = new ImagesFragment();
         frag3 = new FunMbtiFragment_start();
-        setFrag(0);
+//        setFrag(0);
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
