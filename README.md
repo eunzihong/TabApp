@@ -5,9 +5,16 @@
 
 [프로젝트 이름] : 
 
-  
-[각 탭에 대한 설명] :
+Screenshots
+-------------
+<div>
+  <img width="200" src = "https://user-images.githubusercontent.com/46417267/87439568-e79de700-c62b-11ea-8b6c-6b01d6384fdd.PNG">
+  <img width="200" src = "https://user-images.githubusercontent.com/46417267/87439574-e8cf1400-c62b-11ea-96e5-b49577ae7a71.PNG">
+  <img width="200" src = "https://user-images.githubusercontent.com/46417267/87439577-e967aa80-c62b-11ea-836c-9ac288cd6fef.PNG">
+</div>
 
+각 탭에 대한 설명 :
+--------------------
   <1번탭> 
   - 설명 필요
   
