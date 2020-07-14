@@ -23,6 +23,7 @@ public class FunMbtiFragment1 extends Fragment {
     private View view;
 
     private RadioGroup EI1, EI2, EI3;
+    private int E_count, I_count;
     int check1, check2, check3, sum;
 
     private Context context;

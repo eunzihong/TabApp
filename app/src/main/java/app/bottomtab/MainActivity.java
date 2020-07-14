@@ -50,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
         frag3 = new FunMbtiFragment_start();
 //        setFrag(0);
 
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+//        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+//                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+//                .build();
+//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+//        NavigationUI.setupWithNavController(navView, navController); // 요게 터치를 받고 구현하는 거임.
     }
     private void setFrag(int n) {
         fm = getSupportFragmentManager();
