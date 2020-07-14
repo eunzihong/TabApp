@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_infp.PNG.flat",
         "source": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\src\\main\\res\\drawable-v24\\infp.PNG"
+    },
+    {
+        "merged": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_enfp.PNG.flat",
@@ -92,12 +92,12 @@
         "source": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\src\\main\\res\\layout\\fragment_contact.xml"
     },
     {
-        "merged": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
-        "source": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
-    },
-    {
         "merged": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_dashboard_black_24dp.png.flat",
         "source": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_dashboard_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
     },
     {
         "merged": "C:\\Users\\q\\AndroidStudioProjects\\TabApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_isfp.PNG.flat",
