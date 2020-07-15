@@ -21,7 +21,8 @@ Screenshots
   - READ_CONTACTS 권한을 얻어 주소록의 데이터를 앱 내부 주소록 화면에서 표시
   
   <2번탭> 
-  - gridview를 통해 이미지를 표현 
+  - res/drawable에서 저장된 이미지를 사용
+  - gridview를 통해 이미지를 표현
   
   <3번탭> 
   - MBTI 검사를 구현
