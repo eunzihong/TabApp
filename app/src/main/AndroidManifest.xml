@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="implement.android.app">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.bottomtab">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" tools:remove="android:maxSdkVersion"/>
 
     <application
         android:allowBackup="true"
